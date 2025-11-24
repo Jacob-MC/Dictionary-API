@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dictionary Lookup</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <h1 class="brand">Dictionary Lookup</h1>
+    <p class="tagline">Type an English word and get its meaning, phonetics, and more.</p>
+</header>
+
+<main class="container" id="main">
+    <form id="search-form" class="search" novalidate>
+        <label for="word" class="sr-only">Enter a word to look up</label>
+        <input
+                id="word"
+                name="word"
+                type="text"
+                placeholder="e.g., serendipity"
+                aria-label="Word to look up"
+                required
+        />
+        <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <section id="results" class="results" aria-live="polite" aria-busy="false">
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>
+        Jacob Arvizu 2025&trade;<a href="YOUR_GITHUB_REPO_URL" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    </p>
+</footer>
+</body>
+</html>
